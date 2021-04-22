@@ -1,0 +1,46 @@
+<!--miniprogram/pages/home_center/common_panel/index.js.wxml-->
+<wxs src="./index.wxs" module="utils" />
+
+<image class="common-panel-backgroud" src="{{bg}}" />
+<navbar device_name="智能插座" bind:jumpTodeviceEditPage="jumpTodeviceEditPage" />
+
+<view class="common-panel-header">
+  <view class="common-panel-header-block">
+    <image class="common-panel-header-chazuo" src="{{chazuo}}"/>
+    <view class="common-panel-header-chazuo-state">插座已开启</view>
+
+  </view>
+</view>
+
+<!--底部 按钮-->
+<view class="common-panel-bottom">
+  <view class="common-panel-bottom-view">
+    <image class="common-panel-bottom_im" src="{{kaiguan}}"/>
+    <view class="common-panel-bottom_bt">开关</view>
+  </view>
+  <view class="common-panel-bottom-view">
+    <image class="common-panel-bottom_im" src="{{dingshi}}"/>
+    <view class="common-panel-bottom_bt">定时</view>
+  </view>
+  <view class="common-panel-bottom-view">
+    <image class="common-panel-bottom_im" src="{{daojishi}}"/>
+    <view class="common-panel-bottom_bt">倒计时</view>
+  </view>
+  <view class="common-panel-bottom-view">
+    <image class="common-panel-bottom_im" src="{{dianliang}}"/>
+    <view class="common-panel-bottom_bt">电量</view>
+  </view>
+
+
+</view>
+<!-- <block wx:if="{{isRoDpListShow}}">
+  <view class="statuslist">
+    <block wx:for="{{roDpList}}" wx:key="{{item.code}}" wx:for-item="item" wx:for-index='idx'>
+      <view class="{{utils.countDpItem(roDpListLength,idx)}}">
+        <view class="roDpItem-dpName">{{item.code}}</view>
+        <view class="roDpItem-status">{{item.value}}</view>
+      </view>
+    </block>
+  </view>
+</block> -->
+
